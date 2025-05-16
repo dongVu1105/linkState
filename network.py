@@ -11,6 +11,14 @@ from client import Client
 from link import Link
 from router import Router
 
+"""
+01_small_net.json LS, 
+02_small_net_events.json LS, 
+03_pg244_net.json LS, 
+04_pg244_net_events.json LS, 
+05_pg242_net.json LS, 
+06_pg242_net_events.json LS
+"""
 
 def json_load_byteified(file_handle):
     return _byteify(json.load(file_handle, object_hook=_byteify), ignore_dicts=True)
